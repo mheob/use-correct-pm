@@ -1,3 +1,4 @@
+// Package packageManager holds the package manager related functions
 package packageManager
 
 // PackageManager structure of possible package manager

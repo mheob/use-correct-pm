@@ -1,3 +1,4 @@
+// Package utils holds some utility functions
 package utils
 
 import "fmt"
