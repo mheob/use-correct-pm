@@ -30,7 +30,7 @@ pnpm add -D use-correct-pm
 
 Use one of the examples.
 
-```json
+```jsonc
 "scripts": {
 	"use-correct-pm": "npx use-correct-pm npm",        // NPM
 	"use-correct-pm": "yarn dlx use-correct-pm yarn",  // YARN
