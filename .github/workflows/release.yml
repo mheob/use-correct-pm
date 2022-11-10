@@ -1,8 +1,8 @@
 name: Release
 
 on:
-  push:
-    tags: [v*]
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -36,8 +36,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: Setup PNPM
         uses: pnpm/action-setup@v2
@@ -49,11 +47,12 @@ jobs:
         with:
           node-version: 18
           cache: "pnpm"
+          registry-url: "https://registry.npmjs.org"
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Release binary
-        run: pnpm publish --no-git-checks
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

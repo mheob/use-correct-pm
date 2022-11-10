@@ -13,7 +13,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:     "use-correct-pm",
-	Version: "1.0.1",
+	Version: "1.0.2",
 	Short:   "A simple check of the usage of the correct package manager",
 	Long: `Check if the correct package manager is used.
 Available are 'NPM', 'Yarn' and 'PNPM'.`,
