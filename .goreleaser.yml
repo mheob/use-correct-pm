@@ -1,0 +1,8 @@
+builds:
+  - binary: use-correct-pm
+    goos:
+      - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
