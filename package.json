@@ -1,6 +1,6 @@
 {
 	"name": "use-correct-pm",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A simple check of the usage of the correct package manager.",
 	"keywords": [
 		"package-manager",
@@ -16,7 +16,7 @@
 	"license": "MIT",
 	"author": "Alexander Böhm <tools@boehm.work>",
 	"scripts": {
-		"postinstall": "'is-ci || go-npm install'",
+		"postinstall": "is-ci || go-npm install",
 		"prepare": "husky install",
 		"sort-package-json": "pnpm dlx sort-package-json",
 		"preuninstall": "go-npm uninstall"
