@@ -1,50 +1,50 @@
 {
-  "name": "use-correct-pm",
-  "version": "1.0.0",
-  "description": "A simple check of the usage of the correct package manager.",
-  "keywords": [
-    "package-manager",
-    "node",
-    "config"
-  ],
-  "homepage": "https://github.com/mheob/use-correct-pm",
-  "bugs": "https://github.com/mheob/use-correct-pm/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mheob/use-correct-pm"
-  },
-  "license": "MIT",
-  "author": "Alexander Böhm <tools@boehm.work>",
-  "scripts": {
-    "postinstall": "echo 'is-ci || go-npm install'",
-    "prepare": "husky install",
-    "sort-package-json": "pnpm dlx sort-package-json",
-    "preuninstall": "go-npm uninstall"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "package.json": "pnpm dlx sort-package-json"
-  },
-  "dependencies": {
-    "@go-task/go-npm": "^0.1.15"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
-    "husky": "^8.0.2",
-    "is-ci": "^3.0.1",
-    "lint-staged": "^13.0.3"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "goBinary": {
-    "name": "use-correct-pm",
-    "path": "./bin",
-    "url": "https://github.com/mheob/use-correct-pm/releases/download/v{{version}}/use-correct-pm_{{version}}_{{platform}}_{{arch}}.tar.gz"
-  }
+	"name": "use-correct-pm",
+	"version": "1.0.0",
+	"description": "A simple check of the usage of the correct package manager.",
+	"keywords": [
+		"package-manager",
+		"node",
+		"config"
+	],
+	"homepage": "https://github.com/mheob/use-correct-pm",
+	"bugs": "https://github.com/mheob/use-correct-pm/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mheob/use-correct-pm"
+	},
+	"license": "MIT",
+	"author": "Alexander Böhm <tools@boehm.work>",
+	"scripts": {
+		"postinstall": "'is-ci || go-npm install'",
+		"prepare": "husky install",
+		"sort-package-json": "pnpm dlx sort-package-json",
+		"preuninstall": "go-npm uninstall"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"lint-staged": {
+		"package.json": "pnpm dlx sort-package-json"
+	},
+	"dependencies": {
+		"@go-task/go-npm": "^0.1.15"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^17.2.0",
+		"@commitlint/config-conventional": "^17.2.0",
+		"husky": "^8.0.2",
+		"is-ci": "^3.0.1",
+		"lint-staged": "^13.0.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"goBinary": {
+		"name": "use-correct-pm",
+		"path": "./bin",
+		"url": "https://github.com/mheob/use-correct-pm/releases/download/v{{version}}/use-correct-pm_{{version}}_{{platform}}_{{arch}}.tar.gz"
+	}
 }
