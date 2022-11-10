@@ -3,4 +3,4 @@
 
 [ -n "$CI" ] && exit 0
 
-echo pnpm exec use-correct-pm
+pnpm exec use-correct-pm
