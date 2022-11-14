@@ -20,7 +20,8 @@
 		"README.md"
 	],
 	"scripts": {
-		"prepare": "is-ci || husky install && go-npm install",
+		"postinstall": "is-ci || go-npm install",
+		"prepare": "is-ci || husky install",
 		"sort-package-json": "npx sort-package-json",
 		"preuninstall": "go-npm uninstall"
 	},
