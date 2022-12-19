@@ -3,20 +3,20 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.3.0
   '@commitlint/config-conventional': ^17.3.0
-  '@go-task/go-npm': ^0.1.16
+  '@go-task/go-npm': ^0.1.17
   husky: ^8.0.2
   is-ci: ^3.0.1
-  lint-staged: ^13.0.4
+  lint-staged: ^13.1.0
 
 dependencies:
-  '@go-task/go-npm': 0.1.16
+  '@go-task/go-npm': 0.1.17
 
 devDependencies:
   '@commitlint/cli': 17.3.0
   '@commitlint/config-conventional': 17.3.0
   husky: 8.0.2
   is-ci: 3.0.1
-  lint-staged: 13.0.4
+  lint-staged: 13.1.0
 
 packages:
 
@@ -216,8 +216,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@go-task/go-npm/0.1.16:
-    resolution: {integrity: sha512-Al7m7XiF50Pm8TRE2FtvUXyuxybIzWZGKfijFwOyKI8AJAaeQHol5j4qmNo6LAFQ+moQFvuSKeLkXqSBX00Z/g==}
+  /@go-task/go-npm/0.1.17:
+    resolution: {integrity: sha512-j+xydQWrAxsqLYjweok1fWzDmBAA1g/gmFbPyG8kRI/d/+rzXGGLlro8zdS6mJ3Is+8BrIy2ZBmQkoONhowh7A==}
     hasBin: true
     dev: false
 
@@ -895,8 +895,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/13.0.4:
-    resolution: {integrity: sha512-HxlHCXoYRsq9QCby5wFozmZW00hMs/9e3l+/dz6Qr8Kle4UH0kJTdABAbqhzG+3pcG6QjL9kz7NgGBfph+a5dw==}
+  /lint-staged/13.1.0:
+    resolution: {integrity: sha512-pn/sR8IrcF/T0vpWLilih8jmVouMlxqXxKuAojmbiGX5n/gDnz+abdPptlj0vYnbfE0SQNl3CY/HwtM0+yfOVQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
