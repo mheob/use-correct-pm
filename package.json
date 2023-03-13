@@ -34,11 +34,11 @@
 		"@go-task/go-npm": "^0.1.17"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.4.2",
-		"@commitlint/config-conventional": "^17.4.2",
+		"@commitlint/cli": "^17.4.4",
+		"@commitlint/config-conventional": "^17.4.4",
 		"husky": "^8.0.3",
 		"is-ci": "^3.0.1",
-		"lint-staged": "^13.1.0"
+		"lint-staged": "^13.2.0"
 	},
 	"publishConfig": {
 		"access": "public"
