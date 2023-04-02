@@ -1,5 +1,5 @@
-// Package packageManager holds the package manager related functions
-package packageManager
+// Package pm holds the package manager related functions
+package pm
 
 import "github.com/mheob/use-correct-pm/internal/utils"
 

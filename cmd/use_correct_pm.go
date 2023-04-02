@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	pm "github.com/mheob/use-correct-pm/internal/packageManager"
+	"github.com/mheob/use-correct-pm/internal/pm"
 	"github.com/mheob/use-correct-pm/internal/utils"
 
 	"github.com/spf13/cobra"
