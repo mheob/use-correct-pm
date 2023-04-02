@@ -1,5 +1,5 @@
-// Package packageManager holds the package manager related functions
-package packageManager
+// Package pm holds the package manager related functions
+package pm
 
 // PackageManager structure of possible package manager
 type PackageManager struct {
