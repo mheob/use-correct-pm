@@ -44,7 +44,7 @@ func Execute() {
 }
 
 func init() {
-	rootCmd.Flags().BoolP(pm.NPM.Name, pm.NPM.ShortFlag, false, pm.NPM.Description)
-	rootCmd.Flags().BoolP(pm.PNPM.Name, pm.PNPM.ShortFlag, false, pm.PNPM.Description)
-	rootCmd.Flags().BoolP(pm.YARN.Name, pm.YARN.ShortFlag, false, pm.YARN.Description)
+	for _, manager := range pm.AvailablePackageManagers {
+		rootCmd.Flags().BoolP(manager.Name, manager.ShortFlag, false, manager.Description)
+	}
 }
