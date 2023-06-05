@@ -9,6 +9,9 @@ type PackageManager struct {
 	LockFile    string
 }
 
+// AvailablePackageManagers lists all available and supported package managers
+var AvailablePackageManagers = []PackageManager{NPM, PNPM, YARN}
+
 // NPM Package Manager
 var NPM = PackageManager{
 	Name:        "npm",

@@ -23,7 +23,7 @@ func GetSelectedPackageManager(args []string) PackageManager {
 func GetCheckLockFilesErrors(selectedPackageManager PackageManager) []string {
 	var errors []string
 
-	for _, packageManager := range []PackageManager{NPM, PNPM, YARN} {
+	for _, packageManager := range AvailablePackageManagers {
 		if packageManager.Name == selectedPackageManager.Name {
 			if !utils.FileExists(packageManager.LockFile) {
 				errors = append(errors, utils.GetMissingLockFileMessage(packageManager.LockFile))
