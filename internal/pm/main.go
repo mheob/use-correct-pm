@@ -10,6 +10,8 @@ func GetSelectedPackageManager(args []string) PackageManager {
 	}
 
 	switch args[0] {
+	case BUN.Name:
+		return BUN
 	case NPM.Name:
 		return NPM
 	case YARN.Name:

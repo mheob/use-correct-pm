@@ -13,10 +13,10 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:     "use-correct-pm",
-	Version: "1.0.4",
+	Version: "1.2.0",
 	Short:   "A simple check of the usage of the correct package manager",
 	Long: `Check if the correct package manager is used.
-Available are 'NPM', 'Yarn' and 'PNPM'.`,
+Available are 'BUN', 'NPM', 'Yarn' and 'PNPM'.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		chosenPackageManager := pm.GetSelectedPackageManager(args)
 		errors := pm.GetCheckLockFilesErrors(chosenPackageManager)
