@@ -1,6 +1,6 @@
 module github.com/mheob/use-correct-pm
 
-go 1.20
+go 1.21
 
 require github.com/spf13/cobra v1.7.0
 

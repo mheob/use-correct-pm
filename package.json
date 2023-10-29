@@ -31,14 +31,14 @@
 		"package.json": "npx sort-package-json"
 	},
 	"dependencies": {
-		"@go-task/go-npm": "^0.1.18",
+		"@go-task/go-npm": "^0.2.0",
 		"is-ci": "^3.0.1"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^17.6.5",
-		"@commitlint/config-conventional": "^17.6.5",
+		"@commitlint/cli": "^18.2.0",
+		"@commitlint/config-conventional": "^18.1.0",
 		"husky": "^8.0.3",
-		"lint-staged": "^13.2.2"
+		"lint-staged": "^15.0.2"
 	},
 	"publishConfig": {
 		"access": "public"
