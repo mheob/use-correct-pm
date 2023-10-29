@@ -10,7 +10,15 @@ type PackageManager struct {
 }
 
 // AvailablePackageManagers lists all available and supported package managers
-var AvailablePackageManagers = []PackageManager{NPM, PNPM, YARN}
+var AvailablePackageManagers = []PackageManager{BUN, NPM, PNPM, YARN}
+
+// BUN Package Manager
+var BUN = PackageManager{
+	Name:        "bun",
+	Description: "Use BUN as package manager",
+	ShortFlag:   "b",
+	LockFile:    "bun.lockb",
+}
 
 // NPM Package Manager
 var NPM = PackageManager{

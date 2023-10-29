@@ -16,6 +16,7 @@ Use one of the examples.
 	"use-correct-pm": "npx use-correct-pm pnpm",  // PNPM
 	"use-correct-pm": "npx use-correct-pm npm",   // NPM
 	"use-correct-pm": "npx use-correct-pm yarn",  // YARN
+	"use-correct-pm": "npx use-correct-pm bun",   // BUN
 },
 ```
 
@@ -24,7 +25,8 @@ Use one of the examples.
 #### Default (same as `PNPM`)
 
 Use `npx` if you use `NPM` as package manager.\
-Otherwise use `exec` if you have installed the package in your project, otherwise use `dlx`.
+For `PNPM` and `YARN` use `exec` if you have installed the package in your project, otherwise use `dlx`.\
+If you use `BUN` as your package manager use `bunx`.
 
 #### Check for `PNPM`
 
@@ -44,6 +46,12 @@ npx use-correct-pm npm
 
 ```sh
 npx use-correct-pm yarn
+```
+
+#### Check for `BUN`
+
+```sh
+npx use-correct-pm bun
 ```
 
 ### As git hook
