@@ -18,8 +18,9 @@
 	"files": [],
 	"scripts": {
 		"postinstall": "is-ci || go-npm install",
-		"prepare": "is-ci || husky install",
-		"sort-package-json": "pnpm dlx sort-package-json",
+		"prepare": "husky",
+		"publish": "npm publish",
+		"sort-package-json": "bunx sort-package-json",
 		"preuninstall": "go-npm uninstall"
 	},
 	"commitlint": {
@@ -28,17 +29,17 @@
 		]
 	},
 	"lint-staged": {
-		"package.json": "npx sort-package-json"
+		"package.json": "bunx sort-package-json"
 	},
 	"dependencies": {
 		"@go-task/go-npm": "^0.2.0",
 		"is-ci": "^3.0.1"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^18.2.0",
-		"@commitlint/config-conventional": "^18.1.0",
-		"husky": "^8.0.3",
-		"lint-staged": "^15.0.2"
+		"@commitlint/cli": "^19.3.0",
+		"@commitlint/config-conventional": "^19.2.2",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2"
 	},
 	"publishConfig": {
 		"access": "public"
