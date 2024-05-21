@@ -17,7 +17,7 @@ var rootCmd = &cobra.Command{
 	Short:   "A simple check of the usage of the correct package manager",
 	Long: `Check if the correct package manager is used.
 Available are 'BUN', 'NPM', 'Yarn' and 'PNPM'.`,
-	Run: func(cmd *cobra.Command, args []string) {
+	Run: func(_ *cobra.Command, args []string) {
 		chosenPackageManager := pm.GetSelectedPackageManager(args)
 		errors := pm.GetCheckLockFilesErrors(chosenPackageManager)
 		hasErrors := len(errors) > 0
