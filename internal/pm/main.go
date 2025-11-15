@@ -1,7 +1,10 @@
 // Package pm holds the package manager related functions
 package pm
 
-import "github.com/mheob/use-correct-pm/internal/utils"
+import (
+	"github.com/mheob/use-correct-pm/internal/os"
+	"github.com/mheob/use-correct-pm/internal/output"
+)
 
 // GetSelectedPackageManager returns the selected package manager; default is PNPM
 func GetSelectedPackageManager(args []string) PackageManager {
@@ -27,14 +30,14 @@ func GetCheckLockFilesErrors(selectedPackageManager PackageManager) []string {
 
 	for _, packageManager := range AvailablePackageManagers {
 		if packageManager.Name == selectedPackageManager.Name {
-			if !utils.FileExists(packageManager.LockFile) {
-				errors = append(errors, utils.GetMissingLockFileMessage(packageManager.LockFile))
+			if !os.FileExists(packageManager.LockFile) {
+				errors = append(errors, output.GetMissingLockFileMessage(packageManager.LockFile))
 			}
 		} else {
-			if utils.FileExists(packageManager.LockFile) {
+			if os.FileExists(packageManager.LockFile) {
 				errors = append(
 					errors,
-					utils.GetInvalidFileMessage(packageManager.LockFile, selectedPackageManager.LockFile),
+					output.GetInvalidFileMessage(packageManager.LockFile, selectedPackageManager.LockFile),
 				)
 			}
 		}

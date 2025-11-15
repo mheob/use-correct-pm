@@ -1,5 +1,5 @@
-// Package utils holds some utility functions
-package utils
+// Package output holds some utility functions
+package output
 
 import "fmt"
 
