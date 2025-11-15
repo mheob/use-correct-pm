@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/mheob/use-correct-pm/internal/output"
 	"github.com/mheob/use-correct-pm/internal/pm"
-	"github.com/mheob/use-correct-pm/internal/utils"
 
 	"github.com/spf13/cobra"
 )
@@ -23,7 +23,7 @@ Available are 'BUN', 'NPM', 'Yarn' and 'PNPM'.`,
 		hasErrors := len(errors) > 0
 
 		if hasErrors {
-			utils.PrintInvalidMessage()
+			output.PrintInvalidMessage()
 
 			for _, err := range errors {
 				fmt.Println(err)
@@ -31,7 +31,7 @@ Available are 'BUN', 'NPM', 'Yarn' and 'PNPM'.`,
 			os.Exit(1)
 		}
 
-		utils.PrintValidMessage()
+		output.PrintValidMessage()
 	},
 }
 

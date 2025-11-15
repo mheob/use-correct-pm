@@ -1,5 +1,5 @@
-// Package utils holds some utility functions
-package utils
+// Package os holds some OS related functions
+package os
 
 import "os"
 
